@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#120b1f">
+<title>For Elviee ❤️</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+:root{
+  --bg:#0e0818; --card:rgba(255,255,255,.09); --line:rgba(255,255,255,.15);
+  --pink:#ff7eb6; --rose:#ffb4d4; --lav:#c8b5ff; --text:#fff7fc; --muted:#d9cddd;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:
+  radial-gradient(circle at 20% 10%,rgba(255,126,182,.18),transparent 32%),
+  radial-gradient(circle at 90% 25%,rgba(200,181,255,.16),transparent 28%),
+  linear-gradient(180deg,#0e0818 0%,#180d27 48%,#0c0715 100%);
+  color:var(--text);font-family:'DM Sans',sans-serif;overflow-x:hidden;
+}
+body:before{
+  content:"";position:fixed;inset:0;pointer-events:none;opacity:.35;
+  background-image:radial-gradient(#fff 1px,transparent 1px);
+  background-size:70px 70px;mask-image:linear-gradient(#000,transparent 85%);
+}
+#hearts{position:fixed;inset:0;pointer-events:none;z-index:30;overflow:hidden}
+.float-heart{position:absolute;bottom:-30px;font-size:18px;animation:float 6s linear forwards;opacity:.8}
+@keyframes float{to{transform:translateY(-110vh) translateX(var(--drift)) rotate(30deg);opacity:0}}
+section{min-height:100svh;padding:72px 20px 55px;display:flex;align-items:center;justify-content:center}
+.wrap{width:min(720px,100%);margin:auto}
+.card{
+  background:var(--card);border:1px solid var(--line);backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);border-radius:28px;padding:26px;
+  box-shadow:0 25px 80px rgba(0,0,0,.28);
+}
+.center{text-align:center}
+.kicker{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--rose);font-weight:700}
+h1,h2{font-family:'Caveat',cursive;font-weight:700;line-height:.95;margin:12px 0}
+h1{font-size:clamp(4rem,17vw,7.2rem)}
+h2{font-size:clamp(2.8rem,12vw,5rem)}
+p{font-size:1.02rem;line-height:1.8;color:var(--muted)}
+.highlight{color:#fff;font-weight:700}
+.btn{
+  border:0;border-radius:999px;padding:14px 20px;margin:7px;min-height:50px;
+  font:600 1rem 'DM Sans';cursor:pointer;color:#1a0d19;
+  background:linear-gradient(135deg,#ffd0e5,#ff8fbe);
+  box-shadow:0 12px 35px rgba(255,126,182,.25);
+  transition:.2s transform,.2s box-shadow;
+}
+.btn:active{transform:scale(.96)}
+.btn.alt{background:rgba(255,255,255,.1);color:white;border:1px solid var(--line);box-shadow:none}
+.scroll{margin-top:28px;color:#cbb9d2;font-size:.85rem;animation:bob 1.8s infinite}
+@keyframes bob{50%{transform:translateY(6px)}}
+.hidden{display:none!important}
+.fade{animation:fade .7s ease both}
+@keyframes fade{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.type{min-height:110px}
+.letter{font-size:1.05rem}
+.quote{
+  margin:18px 0;padding:20px;border-left:3px solid var(--pink);
+  background:rgba(255,126,182,.07);border-radius:0 18px 18px 0;
+  font-family:'Caveat',cursive;font-size:1.65rem;line-height:1.25;color:#fff;
+}
+.photo-frame{
+  padding:9px;background:#fff;border-radius:18px;transform:rotate(-2deg);
+  box-shadow:0 20px 55px rgba(0,0,0,.35);max-width:430px;margin:0 auto 22px;
+}
+.photo-frame img{display:block;width:100%;border-radius:11px;max-height:66svh;object-fit:cover}
+.caption{color:#6f5362;background:white;padding:10px 5px 4px;font-family:'Caveat';font-size:1.45rem}
+.photo-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}
+.photo-grid .photo-frame{transform:rotate(2deg);margin:0;max-width:none}
+.photo-grid .photo-frame:nth-child(2){transform:rotate(-2deg)}
+.photo-grid img{aspect-ratio:4/5;object-fit:cover;max-height:none}
+.compliments{display:grid;gap:12px;margin-top:20px}
+.comp{
+  padding:17px;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.055);
+  opacity:0;transform:translateY(12px);transition:.5s;
+}
+.comp.show{opacity:1;transform:none}
+.comp b{display:block;color:#fff;margin-bottom:4px}
+.gamebox{text-align:center;padding:20px;border:1px solid var(--line);border-radius:24px;background:rgba(255,255,255,.05)}
+#angerResult{min-height:75px;font-size:1.15rem;color:#fff}
+#heartArena{height:290px;position:relative;overflow:hidden;border-radius:20px;background:radial-gradient(circle,#2a173a,#120a1e)}
+.target-heart{position:absolute;font-size:38px;cursor:pointer;user-select:none;animation:pulse 1s infinite}
+@keyframes pulse{50%{transform:scale(1.15)}}
+.score{font-size:1.2rem;color:#ffd0e5;margin:8px}
+.choice-row{display:flex;flex-wrap:wrap;justify-content:center}
+.choice{flex:1 1 140px}
+.final{padding-bottom:100px}
+.signature{font-family:'Caveat';font-size:2rem;color:#ffd0e5}
+#confetti{position:fixed;inset:0;pointer-events:none;z-index:50}
+.conf{position:absolute;width:8px;height:14px;animation:fall 1.8s ease-out forwards}
+@keyframes fall{to{transform:translateY(100vh) rotate(720deg);opacity:0}}
+.small{font-size:.86rem;color:#bcaac2}
+.divider{height:1px;background:var(--line);margin:24px 0}
+@media(max-width:480px){
+  section{padding-left:15px;padding-right:15px}
+  .card{padding:21px;border-radius:24px}
+  p{font-size:.98rem}
+  .quote{font-size:1.5rem}
+}
+
+/* ===== V2 polish: glassmorphism, flowers, section transitions ===== */
+html{scroll-behavior:smooth;scroll-padding-top:18px}
+body{min-height:100vh}
+section{position:relative;isolation:isolate;scroll-snap-align:start}
+section:after{
+  content:"";position:absolute;inset:auto 8% 0;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(255,180,212,.22),transparent);
+  pointer-events:none;
+}
+.card{
+  position:relative;overflow:hidden;
+  background:linear-gradient(135deg,rgba(255,255,255,.105),rgba(255,255,255,.035));
+  border:1px solid rgba(255,255,255,.17);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 30px 90px rgba(0,0,0,.32);
+}
+.card:before{
+  content:"";position:absolute;inset:-60%;pointer-events:none;
+  background:radial-gradient(circle,rgba(255,180,212,.09),transparent 42%);
+  animation:cardGlow 8s ease-in-out infinite;
+}
+@keyframes cardGlow{50%{transform:translate(12%,8%) scale(1.08)}}
+.card>*{position:relative;z-index:1}
+section .wrap{opacity:0;transform:translateY(34px) scale(.985);transition:opacity .85s ease,transform .85s cubic-bezier(.2,.7,.2,1)}
+section.visible .wrap{opacity:1;transform:none}
+.flower{
+  position:fixed;z-index:2;pointer-events:none;opacity:.18;
+  font-size:26px;filter:blur(.1px);
+  animation:flowerDrift 12s ease-in-out infinite;
+}
+.flower.f1{left:4%;top:20%;animation-delay:-2s}.flower.f2{right:5%;top:34%;font-size:21px;animation-delay:-6s}
+.flower.f3{left:8%;bottom:14%;font-size:18px;animation-delay:-9s}.flower.f4{right:9%;bottom:22%;font-size:25px;animation-delay:-4s}
+@keyframes flowerDrift{0%,100%{transform:translate3d(0,0,0) rotate(-8deg)}50%{transform:translate3d(10px,-18px,0) rotate(8deg)}}
+#musicBtn{
+  position:fixed;right:15px;top:15px;z-index:80;width:48px;height:48px;
+  border-radius:50%;border:1px solid rgba(255,255,255,.2);
+  background:rgba(20,10,30,.58);backdrop-filter:blur(14px);color:white;
+  box-shadow:0 10px 35px rgba(0,0,0,.25);font-size:20px;cursor:pointer;
+}
+#musicBtn.playing{box-shadow:0 0 0 5px rgba(255,126,182,.08),0 10px 35px rgba(255,126,182,.22)}
+.music-note{
+  position:fixed;right:18px;top:70px;z-index:79;font-size:.7rem;color:#d9cddd;
+  opacity:0;transform:translateY(-6px);transition:.3s;pointer-events:none;
+}
+.music-note.show{opacity:1;transform:none}
+.btn{transition:transform .22s cubic-bezier(.2,.8,.2,1),box-shadow .22s,filter .22s}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.04);box-shadow:0 15px 38px rgba(255,126,182,.28)}
+.photo-frame{transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s}
+.photo-frame:hover{transform:rotate(0deg) translateY(-4px)!important;box-shadow:0 28px 65px rgba(0,0,0,.4)}
+@media (prefers-reduced-motion:reduce){
+  *,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<div class="flower f1">🌸</div><div class="flower f2">✿</div><div class="flower f3">🌷</div><div class="flower f4">❀</div>
+<button id="musicBtn" aria-label="Toggle soft instrumental music" onclick="toggleMusic()">♫</button>
+<div id="musicNote" class="music-note">soft music: off</div>
+<div id="hearts"></div><div id="confetti"></div>
+
+<section id="home">
+  <div class="wrap center">
+    <div class="kicker">A tiny website for one very special person</div>
+    <h1>Hey, Elviee… 🥺❤️</h1>
+    <p class="type" id="intro"></p>
+    <button class="btn" onclick="go('apology')">Okay… open it 💌</button>
+    <div class="scroll">↓ thoda sa scroll karna… promise worth it hai</div>
+  </div>
+</section>
+
+<section id="apology">
+<div class="wrap">
+  <div class="card">
+    <div class="kicker">From one sorry idiot</div>
+    <h2>I owe you an apology. 🥺</h2>
+    <p class="letter">
+      Kal raat tum mujhse aur thodi der baat karna chahti thi… aur maine bol diya
+      ki main ab chat nahi karunga because mere side mein nani so rahi thi.
+    </p>
+    <p class="letter">
+      Nani ne bola, <span class="highlight">“ab tum bhi so jao, phone mat chalao.”</span>
+      Toh maine phone rakh diya.
+    </p>
+    <p class="letter">
+      But honestly, <span class="highlight">mujhe tumse baat nahi karni thi aisa bilkul nahi tha.</span>
+      Mujhe bas situation properly explain karni chahiye thi.
+    </p>
+    <div class="quote">“I really wanted to talk with you…” 💔</div>
+    <p class="letter">
+      Tumhari woh line mere dimaag mein reh gayi. I’m genuinely sorry, Elviee.
+      I never wanted you to feel ignored, unwanted, ya unimportant. ❤️
+    </p>
+    <div class="center">
+      <button class="btn" onclick="go('shayari')">Ab thodi shayari sunogi? 🌙</button>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="shayari">
+<div class="wrap">
+  <div class="card">
+    <div class="kicker">Thoda dil se</div>
+    <h2>For the girl who got naraz… 🌙</h2>
+    <div class="quote">
+      “Naraz ho tum toh haq bhi hai tumhara,<br>
+      Galti hui mujhse toh sorry hai dobara…<br>
+      Bas ek baar muskura do Elviee,<br>
+      Tumhari smile ke bina thoda boring hai ye nazara. ❤️”
+    </div>
+    <div class="quote">
+      “Kuch log sirf dost nahi hote,<br>
+      woh ek sukoon ban jaate hain…<br>
+      Jinse baat karke mood automatically better ho jaata hai,<br>
+      aur jinse baat na ho toh din thoda incomplete sa lagta hai. 🫶🏻”
+    </div>
+    <div class="quote">
+      “Teri smile pe toh words bhi kam pad jaate hain,<br>
+      Tujhe dekhu toh compliments bhi sharma jaate hain…<br>
+      Aur sach kahun Elviee,<br>
+      tumhe pretty kehna bhi thoda unfair hai…<br>
+      kyunki tum usse thodi zyada ho. ❤️”
+    </div>
+    <div class="center"><button class="btn" onclick="go('photos')">Okay… now the real problem 👀</button></div>
+  </div>
+</div>
+</section>
+
+<section id="photos">
+<div class="wrap">
+  <div class="card center">
+    <div class="kicker">Evidence section 🚨</div>
+    <h2>Okay… ab ek serious problem hai. 👀</h2>
+    <p>Problem ye hai ki tum itni pretty kyun ho? 😭❤️</p>
+    <div class="photo-grid">
+      <div class="photo-frame">
+        <img src="assets/elviee-1.jpeg" alt="Elviee photo 1">
+        <div class="caption">Pretty. Bas. ❤️</div>
+      </div>
+      <div class="photo-frame">
+        <img src="assets/elviee-2.jpeg" alt="Elviee photo 2">
+        <div class="caption">Okay… this one is unfair. 😭</div>
+      </div>
+    </div>
+    <p class="small">Mujhe compliments dene ke liye dictionary upgrade karni padegi. 😂</p>
+    <button class="btn" onclick="go('compliments')">Tap for tiny compliments ✨</button>
+  </div>
+</div>
+</section>
+
+<section id="compliments">
+<div class="wrap">
+  <div class="card center">
+    <div class="kicker">One tap = one compliment</div>
+    <h2>Things I like about you 💗</h2>
+    <p>Saare ek saath nahi… thoda suspense bhi toh banta hai. 👀</p>
+    <div class="compliments" id="complimentsList">
+      <div class="comp"><b>Your smile 😭❤️</b>Seriously… thoda control kiya karo. Itna cute hona legal hai kya?</div>
+      <div class="comp"><b>Your eyes 👀</b>Pata nahi kya problem hai… but they have a dangerous amount of charm.</div>
+      <div class="comp"><b>Your vibe ✨</b>Tumse baat karna somehow easy aur comfortable feel hota hai.</div>
+      <div class="comp"><b>Your little reactions 😂</b>Especially jab tum mujhse naraz hoti ho… cute bhi aur scary bhi.</div>
+      <div class="comp"><b>And honestly… you. 🫶🏻</b>Bas tum. Kisi explanation ki zarurat nahi.</div>
+    </div>
+    <button class="btn" onclick="revealCompliment()">Reveal next 💌</button>
+    <div class="divider"></div>
+    <button class="btn alt" onclick="go('game')">Ab game kheloge? 🎮</button>
+  </div>
+</div>
+</section>
+
+<section id="game">
+<div class="wrap">
+  <div class="card">
+    <div class="center">
+      <div class="kicker">The very scientific test</div>
+      <h2>How angry is Elviee? 😭</h2>
+      <p>Choose honestly. Main judge nahi karunga. (Maybe.)</p>
+    </div>
+    <div class="gamebox">
+      <div class="choice-row">
+        <button class="btn choice" onclick="anger(1)">😐 Thodi si</button>
+        <button class="btn choice" onclick="anger(2)">😤 Kaafi zyada</button>
+        <button class="btn choice" onclick="anger(3)">💀 Meri watt lag gayi</button>
+      </div>
+      <div id="angerResult"></div>
+    </div>
+
+    <div class="divider"></div>
+    <div class="center">
+      <div class="kicker">Mini game</div>
+      <h2>Catch 5 hearts ❤️</h2>
+      <p>5 hearts pakdo. Agar jeet gayi toh… you officially get bragging rights. 😂</p>
+      <div class="score">Score: <span id="score">0</span>/5</div>
+    </div>
+    <div id="heartArena" aria-label="Heart catching game"></div>
+    <div class="center">
+      <button class="btn" onclick="startGame()">Start / Restart ❤️</button>
+      <p class="small" id="gameMsg">Tap Start. Phir hearts ko jaldi se tap karna!</p>
+    </div>
+
+    <div class="center">
+      <button class="btn alt" onclick="go('final')">One last thing… 🥺</button>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="final" class="final">
+<div class="wrap">
+  <div class="card center">
+    <div class="kicker">No jokes for this one</div>
+    <h2>Elviee… ❤️</h2>
+    <p>
+      I know it was a small thing, but I genuinely don’t like knowing that
+      <span class="highlight">I made you sad.</span>
+    </p>
+    <p>
+      Tum mere liye important ho. Isliye agar meri kisi baat se tumhe bura laga,
+      <span class="highlight">I’m really, genuinely sorry.</span> 🥺
+    </p>
+    <div class="quote">
+      Aur haan… kal ki woh incomplete conversation abhi bhi pending hai. 👀🌙
+      <br><br>
+      Whenever you're ready… <b>I’m listening. 🫶🏻</b>
+    </div>
+
+    <h2 style="font-size:3.3rem">Forgive this idiot? 🥺👉🏻👈🏻</h2>
+    <button class="btn" onclick="forgive()">❤️ YES</button>
+    <button class="btn alt" id="noBtn" onclick="notYet()">😤 Still angry</button>
+    <div id="finalResult" class="fade"></div>
+  </div>
+</div>
+</section>
+
+<script>
+const sections=['home','apology','shayari','photos','compliments','game','final'];
+function go(id){document.getElementById(id).scrollIntoView({behavior:'smooth'});}
+
+const introText="Ek chhoti si problem hai… mujhe tumse kuch kehna hai. And haan, is baar “good night” bolke bhaagne wala nahi hoon. 😭❤️";
+let ti=0;
+function typeIntro(){
+  if(ti<introText.length){document.getElementById('intro').textContent+=introText[ti++];setTimeout(typeIntro,32);}
+}
+document.getElementById('home').classList.add('visible');
+typeIntro();
+
+function heartFloat(){
+  const h=document.createElement('div');h.className='float-heart';
+  h.textContent=['❤️','💗','💕','✨','🌸'][Math.floor(Math.random()*5)];
+  h.style.left=Math.random()*100+'%';h.style.setProperty('--drift',(Math.random()*120-60)+'px');
+  h.style.animationDuration=(4+Math.random()*4)+'s';
+  document.getElementById('hearts').appendChild(h);
+  setTimeout(()=>h.remove(),8000);
+}
+setInterval(heartFloat,900);
+
+let revealed=0;
+function revealCompliment(){
+  const all=document.querySelectorAll('.comp');
+  if(revealed<all.length){all[revealed].classList.add('show');revealed++;}
+  else{
+    document.querySelector('#complimentsList').insertAdjacentHTML('beforeend',
+      '<div class="comp show"><b>Bonus compliment 🚨</b>Bas ek baat… tum jab smile karti ho na, toh meri apology ka half kaam waise hi ho jaata hai. 😭❤️</div>');
+  }
+}
+
+function anger(n){
+  const r=document.getElementById('angerResult');
+  const texts=[
+    "Okayyy… manageable. 😌 Ab please ek tiny smile de do? 🥺",
+    "Oh no 😭… situation serious hai. I’m bringing extra sorry + chocolates in imagination. 🍫",
+    "💀 Okay. Lawyer nahi, full apology department activate karna padega. But I’ll still say it: I’m sorry, Elviee. ❤️"
+  ];
+  r.textContent=texts[n-1];
+  burst();
+}
+
+let score=0, playing=false;
+function startGame(){
+  score=0;playing=true;document.getElementById('score').textContent=score;
+  document.getElementById('gameMsg').textContent='Catch them! 👀';
+  spawnHeart();
+}
+function spawnHeart(){
+  if(!playing)return;
+  const arena=document.getElementById('heartArena');
+  arena.innerHTML='';
+  const h=document.createElement('div');h.className='target-heart';h.textContent='❤️';
+  h.style.left=(5+Math.random()*85)+'%';h.style.top=(5+Math.random()*75)+'%';
+  h.onclick=()=>{
+    score++;document.getElementById('score').textContent=score;
+    burst();
+    if(score>=5){
+      playing=false;arena.innerHTML='';
+      document.getElementById('gameMsg').textContent='YOU WIN! 🥹❤️ Okay Elviee, now please forgive me.';
+    }else spawnHeart();
+  };
+  arena.appendChild(h);
+  setTimeout(()=>{if(playing && arena.contains(h))spawnHeart()},900);
+}
+function burst(){
+  for(let i=0;i<18;i++){
+    const c=document.createElement('div');c.className='conf';
+    c.textContent=['❤','✦','•'][Math.floor(Math.random()*3)];
+    c.style.left=(40+Math.random()*20)+'%';c.style.top='45%';
+    c.style.fontSize=(10+Math.random()*18)+'px';
+    c.style.animationDelay=(Math.random()*.15)+'s';
+    document.getElementById('confetti').appendChild(c);
+    setTimeout(()=>c.remove(),2200);
+  }
+}
+let noCount=0;
+function notYet(){
+  noCount++;
+  const btn=document.getElementById('noBtn');
+  const result=document.getElementById('finalResult');
+  const msgs=[
+    "Okay… I understand. 🥺 Take your time.",
+    "Still angry? Fair. I’ll try one more tiny apology. ❤️",
+    "Elviee 😭 I officially accept defeat. But my sorry is still 100% genuine.",
+    "Okay okay… no pressure. Whenever you're ready, I'm here. 🫶🏻"
+  ];
+  result.innerHTML='<p>'+msgs[Math.min(noCount-1,msgs.length-1)]+'</p>';
+  if(noCount<3){
+    btn.style.transform='translateX('+(Math.random()*100-50)+'px)';
+  }else{
+    btn.style.transform='none';
+  }
+}
+function forgive(){
+  burst();burst();
+  document.getElementById('finalResult').innerHTML=
+    '<div class="quote fade">🥹❤️ APOLOGY ACCEPTED ❤️🥹<br><br>Ab ek kaam karo… smile. Because somewhere, right now, there’s one idiot who is smiling too. 😌<br><br><span class="signature">P.S. — Our pending conversation is still waiting for us. 🌙❤️</span></div>';
+  setTimeout(()=>{document.getElementById('finalResult').scrollIntoView({behavior:'smooth',block:'center'})},150);
+}
+
+// ===== Smooth reveal + optional soft instrumental (generated in-browser) =====
+const revealObserver = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('visible'); });
+},{threshold:.14});
+document.querySelectorAll('section').forEach(s=>revealObserver.observe(s));
+
+let audioCtx=null, master=null, musicTimer=null, musicOn=false, step=0;
+const notes=[261.63,329.63,392.00,329.63,293.66,349.23,440.00,349.23];
+
+function playNote(freq, when, duration=.72){
+  if(!audioCtx || !master)return;
+  const o=audioCtx.createOscillator(), g=audioCtx.createGain();
+  o.type='sine'; o.frequency.value=freq;
+  g.gain.setValueAtTime(0,when);
+  g.gain.linearRampToValueAtTime(.055,when+.08);
+  g.gain.exponentialRampToValueAtTime(.001,when+duration);
+  o.connect(g);g.connect(master);o.start(when);o.stop(when+duration+.05);
+}
+function musicLoop(){
+  if(!musicOn)return;
+  const now=audioCtx.currentTime;
+  playNote(notes[step%notes.length],now,.9);
+  if(step%4===0) playNote(notes[(step+4)%notes.length]/2,now,.95);
+  step++;
+}
+function toggleMusic(){
+  if(!audioCtx){
+    audioCtx=new (window.AudioContext||window.webkitAudioContext)();
+    master=audioCtx.createGain(); master.gain.value=.55; master.connect(audioCtx.destination);
+  }
+  if(audioCtx.state==='suspended') audioCtx.resume();
+  musicOn=!musicOn;
+  const btn=document.getElementById('musicBtn'), note=document.getElementById('musicNote');
+  btn.classList.toggle('playing',musicOn);
+  btn.textContent=musicOn?'♫':'♪';
+  note.textContent=musicOn?'soft music: on':'soft music: off';
+  note.classList.add('show'); setTimeout(()=>note.classList.remove('show'),1100);
+  if(musicOn){
+    musicLoop(); musicTimer=setInterval(musicLoop,1100);
+  }else{
+    clearInterval(musicTimer); musicTimer=null;
+    if(master) master.gain.exponentialRampToValueAtTime(.001,audioCtx.currentTime+.35);
+    setTimeout(()=>{if(master && !musicOn) master.gain.value=.55},450);
+  }
+}
+
+</script>
+</body>
+</html>
